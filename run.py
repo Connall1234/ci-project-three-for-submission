@@ -89,4 +89,16 @@ def get_hit(hit_ship_player, miss_ship_player, boat_player):
     return (row * 5) + column
 
 
+def player_turn(hit_ship_player, miss_ship_player, boat_player):
+    """Function for player's turn with input validation."""
+    player_hit = None
+    while True:
+        player_hit = get_hit(hit_ship_player, miss_ship_player, boat_player)
+        if player_hit in hit_ship_player or player_hit in miss_ship_player:
+            print("Looks like you had that guess!")
+        else:
+            break
+    return player_hit
+
+
     
