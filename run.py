@@ -70,7 +70,7 @@ def get_hit(hit_ship_player, miss_ship_player, boat_player):
     """Function to get player's hit position with input validation."""
     while True:
         try:
-            row = int(input("\nPlease select a row? "))
+            column_input = int(input("\nPlease select a column? "))
             if row in range(0, 5):
                 break
             else:
@@ -79,14 +79,14 @@ def get_hit(hit_ship_player, miss_ship_player, boat_player):
             print("\nPssst, it's meant to be a number!")
     while True:
         try:
-            column = int(input("\nPlease select a column? "))
-            if column in range(0, 5):
+            row_input = int(input("\nPlease select a row? "))
+            if row_input in range(0, 5):
                 break
             else:
                 print("\nThat's off the board!")
         except ValueError as e:
             print("\nHey now, it's meant to be a number!")
-    return (row * 5) + column
+    return (column_input * 5) + row_input
 
 
 def player_turn(hit_ship_player, miss_ship_player, boat_player):
@@ -160,6 +160,7 @@ def print_instruction():
     print("4. Ships are represented by '@'. Misses are marked with 'x', and hits are marked with 'o'.")
     print("You each have five ships!")
     print("The coordinates start from 0 and go up to 4, so make sure you stay within these numbers!")
+    print("The board goes from 0 - 24 so you'll see your guesses get returned in this manner.")
     print("5. You and the computer will take turns guessing the coordinates to attack.")
     print("6. Enter row and column numbers when prompted to make a guess.")
     print("7. The game ends when either all your ships or the computer's ships are sunk, or a draw!.")
