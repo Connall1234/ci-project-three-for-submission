@@ -44,3 +44,18 @@ class Board:
             print(point, " ", row)
 
 
+def get_player_name():
+    """Function to get the player's name with user input validation."""
+    trigger = "off"
+    while trigger == "off":
+        try:
+            name_not_capitalized = input("What is your name, please use three letters only. ")
+            if len(name_not_capitalized) != 3 or not name_not_capitalized.isalpha():
+                raise ValueError("Wrong amount of characters or invalid input, try again! ")
+            name = name_not_capitalized.capitalize()
+            return name
+            trigger = "on"
+        except ValueError as e:
+            print("Error:", e)
+
+
