@@ -14,11 +14,11 @@ I do want to note that this version ends in a draw if either player does not sin
 
 ### Existing features
 
-#### Text art and instructions
+#### Opening screen - instructions
 
-The player is met with some art and instructions to read through to play the game.
+The player is met with some instructions to read through to play the game.
 
-![Text art and instructions](image_link)
+![Instructions](assets/images/opening-screen.png)
 
 #### Enter your name
 
@@ -78,9 +78,9 @@ I have manually tested this project by:
 
 ##### First time user
 
-When I first arrived on the terminal I was greeted with text art and instructions to read for the Battleships game, which were slightly long, but I knew I could come back to them at any time if I needed them.
+When I first arrived on the terminal I was greeted with instructions to read for the Battleships game, which were slightly long, but I knew I could come back to them at any time if I needed them.
 
-![Enter image](image_link)
+![Opening screen](assets/images/opening-screen.png)
 
 Next, I was able to enter my three-letter username, and I tried some other data inouts which got a response saying I needed to try again. To make sure there were no errors here, I tried more than three letters and also numbers, but all did not work until I entered the right amount.
 
