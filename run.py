@@ -71,7 +71,7 @@ def get_hit(hit_ship_player, miss_ship_player, boat_player):
     while True:
         try:
             column_input = int(input("\nPlease select a column? "))
-            if row in range(0, 5):
+            if column_input in range(0, 5):
                 break
             else:
                 print("\nThat's off the board!")
