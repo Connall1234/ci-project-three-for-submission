@@ -108,3 +108,13 @@ def computer_guess(computer_poss_guesses):
     return computer_hit
 
 
+def check(miss, hit, boat, result):
+    """Function to check if the guess hit or miss."""
+    if result in boat:
+        boat.remove(result)
+        hit.append(result)
+    else:
+        miss.append(result)
+
+
+        
