@@ -10,6 +10,8 @@ Battleships is a Python game that runs on the Code Institute mock terminal on He
 
 In our version, the player will be greeted with some text art, alongside some instructions/rules for how to play. The game works like this: you’ll be asked to input your name, and two boards will be shown, yours and the computer's. You will be guessing on your board, and the computer on theirs. You have ten turns to guess all six of the spots. If you succeed, you win; if the computer does it before you, you lose. If you find all the ships at the same time as your opponent, or if you run out of turns, it’s a draw!
 
+I do want to note that this version ends in a draw if either player does not sink all ships in the given time, this was done to add a challenge to the traditional game.
+
 ### Existing features
 
 #### Text art and instructions
