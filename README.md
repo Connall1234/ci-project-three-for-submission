@@ -8,7 +8,7 @@ Battleships is a Python game that runs on the Code Institute mock terminal on He
 
 ## How to play
 
-In our version, the player will be greeted with some text art, alongside some instructions/rules for how to play. The game works like this: you’ll be asked to input your name, and two boards will be shown, yours and the computer's. You will be guessing on your board, and the computer on theirs. You have ten turns to guess all six of the spots. If you succeed, you win; if the computer does it before you, you lose. If you find all the ships at the same time as your opponent, or if you run out of turns, it’s a draw!
+In our version, the player will be greeted with instructions/rules for how to play. The game works like this: you’ll be asked to input your name, and two boards will be shown, yours and the computer's. You will be guessing on your board, and the computer on theirs. You have ten turns to guess all six of the spots. If you succeed, you win; if the computer does it before you, you lose. If you find all the ships at the same time as your opponent, or if you run out of turns, it’s a draw!
 
 I do want to note that this version ends in a draw if either player does not sink all ships in the given time, this was done to add a challenge to the traditional game.
 
@@ -50,6 +50,8 @@ Now you’ll see the boards being printed, with the points updated too. For exam
 
 You’ll get an option to play the game again if it comes to an end. This will restart the game if you wish. It is also able to handle input data that is not valid and keep going until it gets the correct data.
 
+You will also get a goodbye message if you choose to leave. 
+
 ![End game](assets/images/feat-show-end-game.png)
 
 ![Goodbye!](assets/images/feat-end-game-goodbye.png)
@@ -74,7 +76,6 @@ I have manually tested this project by:
 
 ### Stories from user experience testing
 
-#### User one
 
 ##### First time user
 
@@ -82,7 +83,7 @@ When I first arrived on the terminal I was greeted with instructions to read for
 
 ![Opening screen](assets/images/opening-screen.png)
 
-Next, I was able to enter my three-letter username, and I tried some other data inouts which got a response saying I needed to try again. To make sure there were no errors here, I tried more than three letters and also numbers, but all did not work until I entered the right amount.
+Next, I was able to enter my three-letter username, and I tried some other data inputs which got a response saying I needed to try again. To make sure there were no errors here, I tried more than three letters and also numbers, but all did not work until I entered the right amount.
 
 ![Validating data - Name](assets/images/test-input-name.png)
 
