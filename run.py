@@ -142,3 +142,12 @@ def check_winner(boat_player, boat_computer):
         return
 
 
+def print_hits(result, miss, hit, player):
+    """Function to print information about the hits and misses."""
+    if result in hit:
+        print(f"\n{player} guessed {result}, it was a hit!")
+    elif result in miss:
+        print(f"\n{player} guessed {result}, it was a miss")
+
+
+        
