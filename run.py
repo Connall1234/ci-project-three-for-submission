@@ -66,3 +66,27 @@ def print_boats(boat):
     return boat
 
 
+def get_hit(hit_ship_player, miss_ship_player, boat_player):
+    """Function to get player's hit position with input validation."""
+    while True:
+        try:
+            row = int(input("\nPlease select a row? "))
+            if row in range(0, 5):
+                break
+            else:
+                print("\nThat's off the board!")
+        except ValueError as e:
+            print("\nPssst, it's meant to be a number!")
+    while True:
+        try:
+            column = int(input("\nPlease select a column? "))
+            if column in range(0, 5):
+                break
+            else:
+                print("\nThat's off the board!")
+        except ValueError as e:
+            print("\nHey now, it's meant to be a number!")
+    return (row * 5) + column
+
+
+    
