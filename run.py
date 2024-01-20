@@ -59,3 +59,10 @@ def get_player_name():
             print("Error:", e)
 
 
+def print_boats(boat):
+    """Function to randomly assign ships to the board."""
+    random_numbers = random.sample(range(0, 24), 6)
+    boat.extend(random_numbers)
+    return boat
+
+
